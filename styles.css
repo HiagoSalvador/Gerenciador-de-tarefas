@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,108,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+h1{
+    color:#00BFFF;
+}
+
+#to-add{
+    background: #1E90FF;
+    width: 120px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    padding: 0px, 35px;
+    color:#FFFFFF;
+    font-size: 17px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+#to-add:hover{
+    opacity: 0.9;
+}
+
+#to-add:active{
+    opacity: 0.6;
+}
+
+
+.container{
+    background:#FFFFFF;
+    width: 541px;
+    height: 498px;
+    border-radius: 5px;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+#input-main{
+    width: 352px;
+height: 35px;
+border: 1px solid rgba(211,211,211);
+border-radius: 3px;
+padding-left: 5px;
+}
+#tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 50px;
+}
+.task-item{
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px;
+    background:#00BFFF;
+    padding: 20px 45px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+p{
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.button-delete{
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+}
+.fa-trash {
+    color:#D3D3D3 ;
+}
+.button-rocket{
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+}
+.fa-rocket{
+    color: #000080;
+}
+
+p::first-letter{
+    text-transform: uppercase;
+}
+
+.task-item--done {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
