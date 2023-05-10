@@ -1,4 +1,4 @@
-const addButton = document.querySelector('#to-add');
+const addButton = document.getElementById('to-add');//queryselector
 addButton.addEventListener('click', adicionarTarefa);
 
 function adicionarTarefa() {
@@ -48,4 +48,8 @@ function adicionarTarefa() {
 
 
   inputMain.value = '';
+
+  setTimeout(() => {
+    novaTarefa.remove();
+  }, 86400000);
 }
